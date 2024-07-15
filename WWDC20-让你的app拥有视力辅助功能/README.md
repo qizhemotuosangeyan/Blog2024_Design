@@ -1,0 +1,27 @@
+# 让你的app拥有视力辅助功能
+
+### Color and shapes颜色和形状
+
+通常我们用颜色做区分，但是更好的方式是用颜色的同时用形状做区分
+
+iOS14之后允许用户开启形状识别：将代替只使用颜色进行区分而是同时会有形状帮助用户区分不同
+
+可以适配UIAccessibility 的buttonShapesEnabled属性和 differentiateWithoutColorDidChangeNotification 的两个拓展
+
+符号SF symbol是一种非常棒的用来 帮助做区分的东西，字体等等也是
+
+有时候增强对比度也开始一个好的适配视觉辅助的方式，可以在资源库种提供高对比度的选项来为视觉人群服务。
+
+### Text readabiility文本可读性
+
+思考如果用户把字体进行了很多调整后如何让布局看起来合适，可以为此做适配，对于需要区分的主标题副标题，可以用字体的粗细，字号的大小来区分
+
+可以适应「粗体文本」的选项以直接帮助更多用户增加可读性
+
+### Display preference视觉显示偏好
+
+视觉深度（根据陀螺仪来让允许UI轻微晃动增加立体感），这种设计会让UI更立体，但是某些时候可能会让人感到眼花缭乱，考虑如果用户对在动的东西很敏感，他们会打开这个isReduceMotionEnabled选项，请适配它
+
+如果实现了自定义的滑动效果，那么请适配prefersCrossFadeTransitions，来帮助那些对于滑动效果比较敏感的用户，换成交叉淡入淡出
+
+适配isReduceTransparencyEnabled来适配期待更小的透明度视觉用户
