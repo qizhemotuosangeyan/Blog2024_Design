@@ -90,7 +90,7 @@ iOS，iPadOS的Safari增加扩展
 
 <img src="./README.assets/image-20240717145410681.png" alt="image-20240717145410681" style="zoom:50%;" />
 
-Object Capture将一系列2D照片变成3D照片，可以用iPhone捕捉后直接生成3D模型，可能是在Wayfair上，对于实体厂商，可以通过这个功能给用户提供虚拟实体预览
+Object Capture将一系列2D照片变成3D照片，可以用iPhone捕捉后直接生成3D模型，对于实体厂商，可以通过这个功能给用户提供虚拟实体预览
 
 Swift将异步代码使用asynv和await和actor写成了类似顺序编程的可读性
 
